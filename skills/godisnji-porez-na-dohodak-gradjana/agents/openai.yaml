@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godisnji Porez na Dohodak Gradjana"
+  short_description: "Calculate Serbian PP GPDG annual tax"
+  default_prompt: "Use $godisnji-porez-na-dohodak-gradjana to calculate or review a PP GPDG annual tax filing for a specific tax year."

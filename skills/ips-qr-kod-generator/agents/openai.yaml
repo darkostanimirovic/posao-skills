@@ -1,0 +1,4 @@
+interface:
+  display_name: "IPS QR Kod Generator"
+  short_description: "Generate and validate NBS IPS QR codes"
+  default_prompt: "Use $ips-qr-kod-generator to generate and validate an NBS IPS QR payment code from these payment details."

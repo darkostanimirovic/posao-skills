@@ -1,0 +1,25 @@
+{
+  "age_on_dec_31": 45,
+  "dependents_count": 1,
+  "refund_of_contributions": 0,
+  "tax_credit": 0,
+  "thresholds": {
+    "annual_nontaxable_amount": 5000000,
+    "six_x_average_annual_salary": 10000000,
+    "taxpayer_allowance": 700000,
+    "dependent_allowance": 250000,
+    "under_40_additional_deduction": 5000000
+  },
+  "incomes": [
+    {
+      "name": "salary",
+      "after_tax_amount": 6000000,
+      "eligible_for_under_40": true
+    },
+    {
+      "name": "other_income",
+      "after_tax_amount": 200000,
+      "eligible_for_under_40": false
+    }
+  ]
+}

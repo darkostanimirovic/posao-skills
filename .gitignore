@@ -1,0 +1,5 @@
+.DS_Store
+skills/.DS_Store
+**/tmp/
+**/*-generated.png
+**/*-generated.txt
