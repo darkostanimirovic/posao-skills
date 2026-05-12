@@ -1,94 +1,94 @@
 # posao-skills
 
-Public collection of practical Codex skills for people who run a Serbian `DOO` or work as `preduzetnik`.
+Javna kolekcija praktičnih Codex skillova za ljude koji vode `DOO` ili rade kao `preduzetnici` u Srbiji.
 
-The goal of this repository is to collect reusable skills for recurring admin, tax, payment, and document workflows that show up around running a small business in Serbia.
+Cilj ovog repoa je da na jednom mestu skuplja korisne i ponovo upotrebljive skillove za administrativne, poreske, platne i dokumentacione obaveze koje se često javljaju u vođenju malog biznisa u Srbiji.
 
-Current focus:
+Trenutni fokus:
 
-- generating `IPS QR` payment codes
-- calculating `PP GPDG` annual personal income tax
+- generisanje `IPS QR` kodova za plaćanje
+- obračun godišnjeg poreza na dohodak građana kroz `PP GPDG`
 
-Planned additions:
+Planirane dopune:
 
-- invoice creation
-- salary change documents
-- vacation decisions and related HR/admin paperwork
-- other recurring company obligations and templates
+- pravljenje invoice-ova
+- dokumenti o promeni plate
+- odluke o odmoru i slična HR / administrativna dokumentacija
+- druge ponavljajuće obaveze i šabloni za firme i preduzetnike
 
-## Current skills
+## Trenutni skillovi
 
 ### `ips-qr-kod-generator`
 
-Generates and validates Serbian `NBS IPS QR` payment codes from payment details.
+Generiše i validira srpske `NBS IPS QR` kodove za plaćanje na osnovu podataka za uplatu.
 
-Why this is useful:
+Zašto je koristan:
 
-- instead of typing payment fields into a banking app
-- or copying values line by line
-- you generate an IPS QR code once and just scan it
+- umesto da ručno kucaš podatke u bankarsku aplikaciju
+- ili da kopiraš vrednosti polje po polje
+- generišeš IPS QR kod i samo ga skeniraš
 
-What it includes:
+Šta sadrži:
 
-- normalization of payment data
-- validation against the NBS IPS QR validator
-- PNG QR generation
-- example input JSON
+- normalizaciju podataka za uplatu
+- validaciju preko NBS IPS QR validatora
+- generisanje PNG QR koda
+- primer ulaznog JSON fajla
 
-Location:
+Lokacija:
 
 - `skills/ips-qr-kod-generator/`
 
 ### `godisnji-porez-na-dohodak-gradjana`
 
-Helps calculate and review Serbian `PP GPDG` annual personal income tax filings for any tax year.
+Pomaže u obračunu i proveri prijave za srpski godišnji porez na dohodak građana `PP GPDG` za bilo koju poresku godinu.
 
-What it includes:
+Šta sadrži:
 
-- calculation workflow for annual tax
-- guidance on where to find official yearly thresholds and allowances
-- handling for personal allowance, dependents, under-40 deduction, and tax credit
-- example input JSON with rounded illustrative values
+- workflow za obračun godišnjeg poreza
+- preporuke gde da se nađu zvanični godišnji pragovi i olakšice
+- podršku za lični odbitak, izdržavane članove porodice, dodatno umanjenje za mlađe od 40 i poreski kredit
+- primer ulaznog JSON fajla sa zaobljenim, ilustrativnim vrednostima
 
-Location:
+Lokacija:
 
 - `skills/godisnji-porez-na-dohodak-gradjana/`
 
-## How to use
+## Kako se koristi
 
-This repo does not need installation as an app or package. The intended workflow is simple:
+Ovaj repo ne zahteva instalaciju kao aplikacija ili paket. Ideja korišćenja je jednostavna:
 
-1. Download or clone the repository.
-2. Open the `skills/` directory.
-3. Copy the whole skill folder you want into your local Codex skills location.
+1. Preuzmi ili kloniraj repo.
+2. Otvori `skills/` direktorijum.
+3. Prekopiraj ceo skill folder koji ti treba na svoju lokalnu lokaciju za Codex skillove.
 
-Examples:
+Mogući načini korišćenja:
 
-- copy one skill folder only
-- copy all folders from `skills/`
-- keep this repo as a source repo and selectively sync from it later
+- kopiraš samo jedan konkretan skill
+- kopiraš sve foldere iz `skills/`
+- zadržiš ovaj repo kao izvor i kasnije selektivno preuzimaš izmene
 
-If you use Codex locally, a common target is `~/.codex/skills/`, but any local skill location you use is fine.
+Ako koristiš Codex lokalno, česta ciljna lokacija je `~/.codex/skills/`, ali može i bilo koja druga lokalna lokacija koju koristiš za skillove.
 
-## Clone option
+## Opcija 1: kloniranje repoa
 
 ```bash
 git clone https://github.com/darkostanimirovic/posao-skills.git
 cd posao-skills
 ```
 
-Then copy the skill folders you want from `./skills/`.
+Posle toga iz `./skills/` prekopiraš skill foldere koji ti trebaju.
 
-## Download ZIP option
+## Opcija 2: preuzimanje ZIP arhive
 
-1. Open `https://github.com/darkostanimirovic/posao-skills`
-2. Click `Code`
-3. Click `Download ZIP`
-4. Extract the archive
-5. Copy the desired folders from `skills/` into your local skills location
+1. Otvori `https://github.com/darkostanimirovic/posao-skills`
+2. Klikni na `Code`
+3. Klikni na `Download ZIP`
+4. Raspakuj arhivu
+5. Prekopiraj željene foldere iz `skills/` na svoju lokalnu lokaciju za skillove
 
-## Notes
+## Napomene
 
-- The example values in this repository are anonymous and illustrative.
-- Year-sensitive tax calculations should always be checked against current official Serbian sources before use.
-- The included scripts are helpers; the relevant `SKILL.md` files explain when and how to use them.
+- Primeri u ovom repou su anonimni i ilustrativni.
+- Poreske obračune koji zavise od konkretne godine uvek treba proveriti prema aktuelnim zvaničnim izvorima u Srbiji.
+- Uključene skripte su pomoćni alati; odgovarajući `SKILL.md` fajlovi objašnjavaju kada i kako treba da se koriste.
